@@ -7,7 +7,7 @@
 ##### - comando que serve pra instalar as dependencias que estão no package.json
 ###### npm install
 
-##### - comando para inicializar o servidor.
+##### - comando para inicializar o react no navegador.
 ###### npm start
 
 
