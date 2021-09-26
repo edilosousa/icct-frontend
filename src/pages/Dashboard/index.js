@@ -1,8 +1,7 @@
 import React from 'react';
-import axios from 'axios';
-import { Link } from "react-router-dom";
 
-import { Form, Input, Container, Row, Col, Label, Button, Table, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+
+import { Container} from 'reactstrap';
 
 import Menu from '../../components/menu'
 

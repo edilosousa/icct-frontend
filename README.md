@@ -1,26 +1,14 @@
-COMO RODAR O PROJETO BAIXADO
-//Instalar as dependencias
-npm install
+## INSTALAÇÃO E INICIALIZAÇÃO DO PROJETO
 
-//Iniciar o servidor
-npm start
+### *NECESSÁRIO TER O NODEJS INSTALADO NA MÁQUINA DE PREFERÊNCIA NA ÚLTIMA VERSÃO.
+
+#### AO CLONAR O PROJETO, ENTRAR NA PASTA E EXECUTAR OS SEGUINTES COMANDOS.
+
+##### - comando que serve pra instalar as dependencias que estão no package.json
+###### npm install
+
+##### - comando para inicializar o servidor.
+###### npm start
 
 
-SEQUENCIA EXECUTADAS E BIBLIOTECAS INSTALADAS DURANTE O CURSO
-//Criar o projeto React
-npx create-react-app my-app
-
-//Acessar o diretório do projeto
-cd my-app
-
-//Iniciar o servidor
-npm start
-
-//Abrir o projeto no Visual Studio Code
-code .
-
-//Instalar o gerenciador de rotas
-npm install --save react-router-dom
-
-//Permite gerenciar facilmente o histórico de navegação
-npm install --save history
+##### - O react mostrará uma opção caso a porta padrão 3000 esta sendo usada por outra aplicação, digite y e clica no enter.

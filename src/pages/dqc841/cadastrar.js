@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
-import { Form, Input, Container, Row, Col, Label, Button, Table, Breadcrumb, BreadcrumbItem, Se } from 'reactstrap';
+import { Form, Input, Container, Row, Col, Label, Button, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 import Menu from '../../components/menu'
 

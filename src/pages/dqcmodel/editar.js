@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
     Form, Input, Container, Row,
-    Col, Label, Button, Table,
+    Col, Label, Button,
     Breadcrumb, BreadcrumbItem,
     Card, CardBody,
     CardTitle

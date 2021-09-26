@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { Form, Input, Container, Row, Col, Label, Button, Table, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Form, Input, Container, Row, Col, Label, Button, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 import Menu from '../../components/menu'
 
@@ -94,7 +94,7 @@ export default class EditColaborador extends React.Component {
                                 <Input type="select" name="select" id="exampleSelect" onChange={this.handleChange1}>
                                     <option>Selecione um fat_part_no</option>
                                     {this.state.modelo.map(modelos =>
-                                        <option value={modelos.id_dqc84} selected={this.state.fat_part_no == modelos.id_dqc84}>{modelos.FAT_PART_NO}</option>
+                                        <option value={modelos.id_dqc84} selected={this.state.fat_part_no === modelos.id_dqc84}>{modelos.FAT_PART_NO}</option>
                                     )}
                                 </Input>
                             </Col>

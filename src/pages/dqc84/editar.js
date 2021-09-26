@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
     Form, Input, Container, Row, Col,
-    Label, Button, Table, Breadcrumb,
+    Label, Button, Breadcrumb,
     BreadcrumbItem, Card, CardBody,
     CardTitle
 } from 'reactstrap';
@@ -97,7 +97,7 @@ export default class EditColaborador extends React.Component {
                                         <Input type="select" name="select" id="exampleSelect" onChange={this.handleChange1}>
                                             <option>Selecione um modelo</option>
                                             {this.state.modelo.map(modelos =>
-                                                <option value={modelos.ID} selected={this.state.model2 == modelos.ID}>{modelos.MODEL}</option>
+                                                <option value={modelos.ID} selected={this.state.model2 === modelos.ID}>{modelos.MODEL}</option>
                                             )}
                                         </Input>
                                     </Col>
