@@ -12,3 +12,6 @@
 
 
 ##### - O react mostrará uma opção caso a porta padrão 3000 esta sendo usada por outra aplicação, digite y e clica no enter.
+
+##### - Em cada Página de CRUD existe um botão para gerar os dados do banco em excel.
+###### O arquivo gerado ficará na raiz do diretório do back-end.
