@@ -46,6 +46,15 @@ class Dashboard extends React.Component {
         }
     }
 
+    handlegerar(){
+        axios.get(`http://localhost:3000/dqcmodelexcel`)
+            .then(res => {
+                if(res.data.status === 1){
+                    alert("Arquivo gerado com sucesso");
+                }
+            })
+    }
+
     render() {
         return (
             <>
@@ -67,8 +76,7 @@ class Dashboard extends React.Component {
                             <Card>
                                 <CardBody>
                                     <CardTitle tag="h5">Lista de modelos</CardTitle>
-
-
+                                    <CardTitle><Button color="info" size="sm" onClick={this.handlegerar}>Exportar excel</Button></CardTitle>
 
                                     <Table striped>
                                         <thead>

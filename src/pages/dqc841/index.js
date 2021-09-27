@@ -31,10 +31,7 @@ class Dashboard extends React.Component {
             })
     }
 
-    handleSearch(nome) {
-
-    }
-
+    
     handleDelete(id) {
         if (window.confirm("Deseja realmente excluir esse DQC841?")) {
             axios.delete(`http://localhost:3000/dqc841/${id}`)
@@ -50,6 +47,16 @@ class Dashboard extends React.Component {
                 })
         }
     }
+
+    handlegerar(){
+        axios.get(`http://localhost:3000/dqc841excel`)
+            .then(res => {
+                if(res.data.status === 1){
+                    alert("Arquivo gerado com sucesso");
+                }
+            })
+    }
+
 
     render() {
         return (
@@ -72,6 +79,7 @@ class Dashboard extends React.Component {
                             <Card>
                                 <CardBody>
                                     <CardTitle tag="h5">Lista de DQC841</CardTitle>
+                                    <CardTitle><Button color="info" size="sm" onClick={this.handlegerar}>Exportar excel</Button></CardTitle>
                                     <Table striped>
                                         <thead>
                                             <tr>
